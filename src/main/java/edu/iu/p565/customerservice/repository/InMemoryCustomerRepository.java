@@ -9,8 +9,7 @@ import org.springframework.stereotype.Repository;
 
 import edu.iu.p565.customerservice.model.Customer;
 
-@Repository
-public class CustomerRepository {
+public class InMemoryCustomerRepository {
     private List<Customer> customers = new ArrayList<>();
 
     public List<Customer> findAll() {
